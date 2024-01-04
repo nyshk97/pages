@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<div class="swiper sample-slider">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="https://placekitten.com/200/300">
+    </div>
+    <div class="swiper-slide">
+      <img src="https://placekitten.com/200/301">
+    </div>
+    <div class="swiper-slide">
+      <img src="https://placekitten.com/200/302">
+    </div>
+    <div class="swiper-slide">
+      <img src="https://placekitten.com/200/303">
+    </div>
+    <div class="swiper-slide">
+      <video preload="none" controls
+        src='https://github.com/nyshk97/pages/assets/38527299/5e8cf68c-2c24-48c4-af46-a5df93ae15d5'></video>
+    </div>
+    <div class="swiper-slide">
+      <img src="https://placekitten.com/200/304">
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+
+<style>
+  .sample-slider {
+    height: 500px;
+  }
+</style>
+
+<script>
+  const swiper = new Swiper('.sample-slider', {
+    loop: true,
+    preloadImages: false,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    lazy: {
+      loadPrevNext: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  })
+</script>
